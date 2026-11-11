@@ -15,6 +15,20 @@
 
 <br>
 
+<!-- v2:a -->
+<table>
+<tr>
+<td width="150" align="center"><img src="./assets/logo.svg" width="120" alt="Beat.rip"></td>
+<td>
+<b>Beat.rip for Windows</b>: a small window onto beat.rip with its own icon, its own start screen, and a frame that takes the app's colour.<br><br><a href="https://github.com/loverhaterlmao/beat-rip/releases/latest"><img alt="Download for Windows" src="https://img.shields.io/badge/Download-for%20Windows-ff3b3b?style=for-the-badge&labelColor=12161b"></a>
+<br><br><b>On a phone:</b> open <a href="https://beat.rip">beat.rip</a> in your browser and choose <i>Add to Home Screen</i> (iPhone: the Share button; Android: the menu, then <i>Install app</i>).
+</td>
+</tr>
+</table>
+<!-- /v2:a -->
+
+
+
 ## What it is
 
 Check one name across 57 platforms and every popular domain, asked of each platform itself, with an honest "unknown" when one will not say.
@@ -23,6 +37,22 @@ Check one name across 57 platforms and every popular domain, asked of each platf
 
 Beat.rip is made by Sick & Nexra Studios (S&NS). Its source code is closed. This repository is where to find it, how
 to get help, and where to report problems.
+
+<!-- v2:b -->
+## The desktop app
+
+<img src="./assets/app.svg" alt="Beat.rip for Windows on its start screen" width="100%">
+
+- **Getting it:** [the latest release](https://github.com/loverhaterlmao/beat-rip/releases/latest). Unzip it and open `Beat.rip.exe`. There is nothing to install.
+- **What it is:** a window onto [beat.rip](https://beat.rip). Your work stays in your account on the site; the app keeps only your sign-in, in a folder beside itself.
+- **What it needs:** Windows 10 or 11. It uses the WebView2 runtime, which Windows 11 has built in.
+- **The warning Windows shows:** "unknown publisher", the first time. The app is not code-signed yet. Check the file's
+  SHA-256 against the one in the release notes if you want to be sure it is ours.
+
+## The small print
+
+[Terms of use](TERMS.md) · [Privacy](PRIVACY.md) · [Acceptable use](ACCEPTABLE_USE.md) · [Licence](LICENSE)
+<!-- /v2:b -->
 
 ## In this repository
 
