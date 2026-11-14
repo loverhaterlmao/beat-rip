@@ -40,7 +40,7 @@ to get help, and where to report problems.
 
 ## From a terminal
 
-`beatrip <name>` asks more than 6,800 sites whether a name is taken, from your own computer. Each site is asked once and read against what it is known to say for a name that exists and for one that does not; every "taken" is double-checked against a made-up name on the same site; anything unclear is reported as "could not tell", never as free. No account, no key. It needs Node.js 20 or newer.
+`beatrip <name>` asks more than 6,500 sites whether a name is taken, through Beat.rip's own scanners: about a minute and a half for a name nobody has asked lately, and no time at all for six hours after. Add `--local` to ask every site from your own computer instead, which sends nothing to beat.rip. Each site is asked once and read against what it is known to say for a name that exists and for one that does not; every "taken" is double-checked against a made-up name on the same site; anything unclear is reported as "could not tell", never as free. No account, no key. It needs Node.js 20 or newer.
 
     irm https://beat.rip/install.ps1 | iex            # Windows (PowerShell)
     curl -fsSL https://beat.rip/install.sh | sh       # macOS and Linux
@@ -56,6 +56,12 @@ Both install scripts are short and plain, and each checks what it downloads agai
 The **Everywhere** section of [beat.rip](https://beat.rip) does the same check from the page: type a name and watch the answers arrive, site by site, with a spreadsheet of all of them at the end. There is an address for programs too: `GET https://beat.rip/api/wide?name=yourname` streams one line per site.
 
 <!-- v2:b -->
+## In your language
+
+The site is written in 18 languages: English, Spanish, Portuguese, French, German, Italian, Dutch, Polish, Turkish, Russian, Ukrainian, Arabic, Hindi, Indonesian, Vietnamese, Japanese, Korean and Chinese. Your browser's own language is chosen for you, each language has its
+own address (for example [beat.rip/ja/](https://beat.rip/ja/)), and every page carries a list to switch. All 57
+platform pages are translated too.
+
 ## The desktop app
 
 <img src="./assets/app.svg" alt="Beat.rip for Windows on its start screen" width="100%">
