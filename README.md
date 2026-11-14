@@ -66,8 +66,8 @@ platform pages are translated too.
 
 <img src="./assets/app.svg" alt="Beat.rip for Windows on its start screen" width="100%">
 
-- **Getting it:** [the latest release](https://github.com/loverhaterlmao/beat-rip/releases/latest). Unzip it and open `Beat.rip.exe`. There is nothing to install.
-- **What it is:** a window onto [beat.rip](https://beat.rip). Your work stays in your account on the site; the app keeps only your sign-in, in a folder beside itself.
+- **Getting it:** [the latest release](https://github.com/loverhaterlmao/beat-rip/releases/latest). Unzip it and open `Beat.rip.exe` once. It puts itself with your own programs (no administrator rights), appears in your Start menu and under Installed apps, and opens from there from then on. `--portable` runs it where it is and installs nothing.
+- **What it is:** [beat.rip](https://beat.rip) in a window of its own. With no connection it shows its own screen and opens the site by itself when the connection is back; it opens where you closed it; `Beat.rip.exe <name>` goes straight to a check. Your work stays in your account on the site.
 - **What it needs:** Windows 10 or 11. It uses the WebView2 runtime, which Windows 11 has built in.
 - **The warning Windows shows:** "unknown publisher", the first time. The app is not code-signed yet. Check the file's
   SHA-256 against the one in the release notes if you want to be sure it is ours.
