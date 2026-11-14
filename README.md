@@ -31,12 +31,29 @@
 
 ## What it is
 
-Check one name across 57 platforms and every popular domain, asked of each platform itself, with an honest "unknown" when one will not say.
+Check one name across 57 platforms and every popular domain, asked of each platform itself, with an honest "unknown" when one will not say. Then ask thousands more sites in one go (forums, communities, code hosts, wikis), on the site under **Everywhere** or from your terminal.
 
 **Open it:** [beat.rip](https://beat.rip)
 
 Beat.rip is made by Sick & Nexra Studios (S&NS). Its source code is closed. This repository is where to find it, how
 to get help, and where to report problems.
+
+## From a terminal
+
+`beatrip <name>` asks more than 6,800 sites whether a name is taken, from your own computer. Each site is asked once and read against what it is known to say for a name that exists and for one that does not; every "taken" is double-checked against a made-up name on the same site; anything unclear is reported as "could not tell", never as free. No account, no key. It needs Node.js 20 or newer.
+
+    irm https://beat.rip/install.ps1 | iex            # Windows (PowerShell)
+    curl -fsSL https://beat.rip/install.sh | sh       # macOS and Linux
+
+    beatrip yourname                 # every site in the list, in about a minute and a half
+    beatrip yourname --top 300       # only the most visited, in a few seconds
+    beatrip yourname --json          # for scripts; --csv file.csv for a spreadsheet
+
+Both install scripts are short and plain, and each checks what it downloads against a SHA-256 it carries. The list of sites began as the [Maigret](https://github.com/soxoj/maigret) project's open database (MIT licence); every site in ours was measured and answered correctly before it was let in.
+
+## On the site
+
+The **Everywhere** section of [beat.rip](https://beat.rip) does the same check from the page: type a name and watch the answers arrive, site by site, with a spreadsheet of all of them at the end. There is an address for programs too: `GET https://beat.rip/api/wide?name=yourname` streams one line per site.
 
 <!-- v2:b -->
 ## The desktop app
